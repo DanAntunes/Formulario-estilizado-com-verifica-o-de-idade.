@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Formulário de Cadastro</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilo.css">
+
+  </head>
+  <body>
+    <!--Inicio do Container-->
+    <div class="container">
+
+        <div class="formulario"><!--Div do formulario-->
+            <form id="cadastroForm"><!--Inicio do Formulario-->        
+                <div class="formulario-cabecalho">
+                  <div class="titulo">
+                    <h1>Cadastre-se</h1>
+                  </div>
+                </div><!--Final do cabeçalho-->
+                <div class="text-div"> 
+                  <div class="componentes-text"><!--Nome e Email-->
+                    <label for="nome">Nome completo</label>
+                    <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required minlength="15" autocomplete="off">
+                  </div>
+                  <div class="componentes-text">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="Email" placeholder="Digite seu email" required autocomplete="off">
+                  </div><!--Nome e Email fim-->
+
+                  <div class="sexo-inputs"><!--Sexo-->
+                    <div class="sexo-titulo">
+                      <h5>Sexo</h5>
+                    </div>
+                    <div class="sexo-input">
+                      <div class="genero">
+                        <input type="radio" id="feminino-input" name="sexo" value="Feminino">
+                        <label for="feminino-input">Feminino</label>
+                      </div>
+                      <div class="genero">
+                        <input type="radio" id="masculino-input" name="sexo" value="Masculino">
+                        <label for="masculino-input">Masculino</label>
+                      </div>
+                    </div>
+                  </div><!--Sexo-->
+
+                  <br>
+
+                  <div class="data"><!--Data de nascimento-->
+                    <div class="data-titulo">
+                      <h5>Data de nascimento</h5>
+                    </div>
+                    <div class="data-componente">
+                      <div class="date">
+                        <input type="date" id="dataNascimento-input" name="data">
+                      </div>
+                    </div>
+                  </div><!--Data de nascimento fim-->
+
+                  <br>
+
+                  <div class="estado-civil-inputs"><!--Estado Civil-->
+                    <div class="estado-civil-titulo">
+                      <h5>Estado Civil</h5>
+                    </div>
+                    <div class="estado-input">
+                      <div class="estado-civil">
+                        <input type="radio" id="casado-input" name="civil" value="Casado">
+                        <label for="casado-input">Casado(a)</label>
+                      </div>
+                      <div class="estado-civil">
+                        <input type="radio" id="solteiro-input" name="civil" value="Solteiro">
+                        <label for="solteiro-input">Solteiro(a)</label>
+                      </div>
+                      <div class="estado-civil">
+                        <input type="radio" id="outro-input" name="civil" value="Outro">
+                        <label for="outro-input">Outro</label>
+                      </div>
+                    </div>
+                  </div><!--Estado Civil fim-->
+
+                  <br>
+
+                  <div class="area-interesse-input"><!--Área de Interesse-->
+                    <label for="analise-checkbox" class="area-interesse-titulo">Área de interesse</label>
+                    <div class="area-interesse">
+                      <div class="area-interesse-checkbox">
+                        <input type="checkbox" id="analise-checkbox" name="areas" value="Análise">
+                        <label for="analise-checkbox">Análise</label>
+                      </div>
+                      <div class="area-interesse-checkbox">
+                        <input type="checkbox" id="bd-checkbox" name="areas" value="Banco de dados">
+                        <label for="bd-checkbox">Banco de dados</label>
+                      </div>
+                      <div class="area-interesse-checkbox">
+                        <input type="checkbox" id="desenvolvimento-checkbox" name="areas" value="Desenvolvimento">
+                        <label for="desenvolvimento-checkbox">Desenvolvimento</label>
+                      </div>
+                      <div class="area-interesse-checkbox">
+                        <input type="checkbox" id="engenharia-checkbox" name="areas" value="Engenharia de software">
+                        <label for="engenharia-checkbox">Engenharia de software</label>
+                      </div>
+                      <div class="area-interesse-checkbox">
+                        <input type="checkbox" id="redes-checkbox" name="areas" value="Redes de computadores">
+                        <label for="redes-checkbox">Redes de computadores</label>
+                      </div>
+                    </div>
+                  </div><!--Área de Interesse fim-->
+                </div>
+                <div class="envio-botão">
+                  <input type="submit" value="Enviar">
+                </div>
+            </form><!--Final do formulario-->
+        </div>
+    </div><!--Final Container-->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
