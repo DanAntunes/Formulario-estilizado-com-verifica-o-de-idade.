@@ -1,0 +1,158 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.formulario {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.formulario-cabecalho {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.formulario-cabecalho h1 {
+  font-size: 24px;
+  color: #333333;
+  margin: 0;
+}
+
+.componentes-text {
+  margin-bottom: 20px;
+}
+
+.componentes-text label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333333;
+}
+.componentes-text input[type="text"],
+.componentes-text input[type="email"],
+.componentes-text input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  background-color: #f8f8f8;
+  transition: border-color 0.3s;
+}
+.componentes-text input[type="text"]:focus,
+.componentes-text input[type="email"]:focus,
+.componentes-text input[type="date"]:focus {
+  border-color: #00b8bd;
+}
+.componentes-text input:focus-visible {
+  outline: 1px solid #6c63ff;
+}
+.componentes-text input {
+  transition: all 0.3s;
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px black;
+    
+}
+.componentes-text input::placeholder {
+  color: #000000be;
+}
+.sexo-inputs {
+  margin-bottom: 20px;
+}
+.sexo-inputs h5 {
+  font-size: 16px;
+  color: #333333;
+  margin: 0;
+}
+.sexo-inputs .genero {
+  margin-bottom: 10px;
+}
+.sexo-inputs .genero input[type="radio"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.sexo-inputs .genero label {
+  font-size: 16px;
+  color: #333333;
+}
+.data {
+  margin-bottom: 20px;
+}
+.data h5 {
+  font-size: 16px;
+  color: #333333;
+  margin: 0;
+ }
+.estado-civil-inputs {
+  margin-bottom: 20px;
+}
+.estado-civil-inputs h5 {
+ font-size: 16px;
+ color: #333333;
+ margin: 0;
+}
+.estado-civil-inputs .estado-civil {
+  margin-bottom: 10px;
+}
+.estado-civil-inputs .estado-civil input[type="radio"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.estado-civil-inputs .estado-civil label {
+  font-size: 16px;
+  color: #333333;
+}
+.checkbox-group {
+  margin-bottom: 20px;
+}
+.checkbox-group .area-interesse-titulo {
+  display: block;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+.checkbox-group .area-interesse-checkbox {
+   margin-bottom: 5px;
+}
+.checkbox-group .area-interesse-checkbox input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+ }
+.checkbox-group .area-interesse-checkbox label {
+  font-size: 16px;
+  color: #333333;
+}
+.envio-botão input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00dae0;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.envio-botão input[type="submit"]:hover {
+  background-color: #00b8bd;
+}
+
+.area-interesse-input {
+    margin-bottom: 10px;
+}
