@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   
     function validarEmail() {
-      var emailInput = document.getElementById('email');
+      const emailInput = document.getElementById('email');
       if (emailInput.value.length < 10) {
         alert('O email deve ter pelo menos 10 caracteres');
         emailInput.focus();
@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
     
     function validarDataNascimento() {
-      var dataNascimentoInput = document.getElementById('dataNascimento-input');
-      var dataNascimento = new Date(dataNascimentoInput.value);
-      var hoje = new Date();
+      const dataNascimentoInput = document.getElementById('dataNascimento-input');
+      const dataNascimento = new Date(dataNascimentoInput.value);
+      const hoje = new Date();
       if (dataNascimento >= hoje) {
         alert('Data de nascimento inválida');
         dataNascimentoInput.focus();
@@ -25,12 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
   
     
     function validarEstadoCivil() {
-      var casadoInput = document.getElementById('casado-input');
-      var dataNascimentoInput = document.getElementById('dataNascimento-input');
+      const casadoInput = document.getElementById('casado-input');
+      const dataNascimentoInput = document.getElementById('dataNascimento-input');
       if (casadoInput.checked && dataNascimentoInput.value !== '') {
-        var dataNascimento = new Date(dataNascimentoInput.value);
-        var hoje = new Date();
-        var idade = hoje.getFullYear() - dataNascimento.getFullYear();
+        const dataNascimento = new Date(dataNascimentoInput.value);
+        const hoje = new Date();
+        const idade = hoje.getFullYear() - dataNascimento.getFullYear();
         if (idade <= 15) {
           alert('É necessário ter mais de 15 anos para se cadastrar como casado(a)');
           dataNascimentoInput.focus();
@@ -49,6 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   
-    var form = document.getElementById('cadastroForm');
+    const form = document.getElementById('cadastroForm');
     form.addEventListener('submit', validarFormulario);
   });
