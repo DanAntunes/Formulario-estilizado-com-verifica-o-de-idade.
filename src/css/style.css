@@ -8,7 +8,7 @@ body {
   margin-bottom: 5px;
 }
 
-.titulo{
+h1.titulo{
   font-size: 24px;
   color: #333333;
   margin: 0;
