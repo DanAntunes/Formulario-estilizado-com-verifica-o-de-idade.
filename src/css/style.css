@@ -8,6 +8,12 @@ body {
   margin-bottom: 5px;
 }
 
+.formulario-cabecalho h1 {
+  font-size: 24px;
+  color: #333333;
+  margin: 0;
+}
+
 h1.titulo{
   font-size: 25px;
   color: #333333;
@@ -29,11 +35,7 @@ h1.titulo{
 
 
 
-.formulario-cabecalho h1 {
-  font-size: 24px;
-  color: #333333;
-  margin: 0;
-}
+
 
 .componentes-text {
   margin-bottom: 20px;
